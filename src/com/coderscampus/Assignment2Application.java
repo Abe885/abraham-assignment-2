@@ -29,7 +29,7 @@ public class Assignment2Application {
 			}
 			userInput = returnUserInput(scanner);
 		}
-		if (userWin == false) {
+		if (!userWin) {
 			System.out.println("You lose!");
 			System.out.println("the number to guess was: " + (gameNumber));
 		}

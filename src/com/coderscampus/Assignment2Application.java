@@ -17,7 +17,7 @@ public class Assignment2Application {
 			userInput = returnUserInput(scanner);
 		}
 		boolean userWin = false;
-		for (int i = 0; i < 4; i++) {
+		for (int i = 0; i < 5; i++) {
 			if (userInput == gameNumber) {
 				System.out.println("you win!");
 				userWin = true;
@@ -29,7 +29,9 @@ public class Assignment2Application {
 			}
 			userInput = returnUserInput(scanner);
 		}
-		if (!userWin) {
+		if (!userWin && userInput == gameNumber) {
+			System.out.println("You win!");
+		} else {
 			System.out.println("You lose!");
 			System.out.println("the number to guess was: " + (gameNumber));
 		}

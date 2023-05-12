@@ -28,10 +28,10 @@ public class Assignment2Application {
 				System.out.println("Please pick a higher number");
 			} else if (userInput > gameNumber) {
 				System.out.println("Please pick a lower number");
-			}  if (userGuesses == 5) {
+			}
+			if (userGuesses == 5) {
 				System.out.println("You lose! The number to guess was " + gameNumber);
 			}
-		
 		}
 		scanner.close();
 	}
